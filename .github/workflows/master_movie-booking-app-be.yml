@@ -34,7 +34,7 @@ jobs:
     runs-on: windows-latest
     needs: build
     environment:
-      name: 'production'
+      name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -48,6 +48,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'Movie-Booking-App-BE'
-          slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_dd02a466071349a7969d92076f129dc9 }}
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_248B074E179843ADB185300CCF2C5D23 }}
           package: '*.jar'

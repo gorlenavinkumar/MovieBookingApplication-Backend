@@ -1,6 +1,5 @@
-package com.rbp.movieapp.controller;
+package com.rbp.bookmymovie.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 //import com.rbp.bookmymovie.kafka.KafkaProducerConfig;
 import com.rbp.bookmymovie.models.Movie;
@@ -67,7 +66,7 @@ public class MovieAppControllerTest {
         when(movieService.getAllMovies()).thenReturn(movies);
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/v1.0/moviebooking/all"))
-                .andExpect(status().isFound());
+                .andExpect(status().isOk());
     }
 
     @Test

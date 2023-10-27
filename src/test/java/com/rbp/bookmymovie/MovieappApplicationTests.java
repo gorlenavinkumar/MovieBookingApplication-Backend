@@ -1,4 +1,4 @@
-package com.rbp.movieapp;
+package com.rbp.bookmymovie;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

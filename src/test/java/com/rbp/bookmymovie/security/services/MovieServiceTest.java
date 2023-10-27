@@ -1,4 +1,4 @@
-package com.rbp.movieapp.security.services;
+package com.rbp.bookmymovie.security.services;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
 
 import com.rbp.bookmymovie.models.Movie;
 import com.rbp.bookmymovie.models.Ticket;
@@ -22,6 +23,7 @@ import com.rbp.bookmymovie.security.services.MovieService;
 
 
 @SpringBootTest
+@ContextConfiguration
 @ActiveProfiles("test")
 public class MovieServiceTest {
 

@@ -1,3 +1,4 @@
+package com.rbp.bookmymovie.controller;
 //package com.rbp.movieapp.controller;
 //
 //import com.fasterxml.jackson.databind.ObjectMapper;

@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'production'
+      name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -48,6 +48,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'MovieBookingApp-BE'
-          slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_d65cc43831cc45d883e7c7b8f1ddb300 }}
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A6C96CA07C1C4ED0BF69D6591CAD88D7 }}
           package: '*.jar'

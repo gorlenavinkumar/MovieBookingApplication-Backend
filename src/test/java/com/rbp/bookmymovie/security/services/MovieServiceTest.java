@@ -23,7 +23,6 @@ import com.rbp.bookmymovie.security.services.MovieService;
 
 
 @SpringBootTest
-@ContextConfiguration
 @ActiveProfiles("test")
 public class MovieServiceTest {
 

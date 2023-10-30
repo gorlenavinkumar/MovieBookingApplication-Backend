@@ -34,7 +34,7 @@ import com.rbp.bookmymovie.repository.UserRepository;
 import com.rbp.bookmymovie.security.jwt.JwtUtils;
 import com.rbp.bookmymovie.security.services.UserDetailsImpl;
 
-@CrossOrigin(origins = {"https://moviebookingapp-fe.azurewebsites.net, http://localhost:3000", "http://localhost:3001", "http://localhost:3002"})
+@CrossOrigin(origins = {"https://mbp-frontend.azurewebsites.net, http://localhost:3000", "http://localhost:3001", "http://localhost:3002"})
 @RestController
 @RequestMapping("/api/v1.0/moviebooking")
 @Slf4j
